@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My AI Q&A — 1000+ Daily Answers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <h1>My AI Q&A 🤖</h1>
+      <p class="tag">Type a daily-life question. I handle typos & variations.</p>
+    </header>
+
+    <section id="chat" class="chatbox" aria-live="polite"></section>
+
+    <form class="bar" onsubmit="sendMessage(); return false;">
+      <input id="userInput" type="text" placeholder="Ask me anything (e.g., 'how to boil an egg?')" autocomplete="off" />
+      <button type="submit" aria-label="Send">Send</button>
+    </form>
+
+    <footer class="foot">
+      <small>Powered by a local Q&A brain (1000+ patterns, offline). No API key needed.</small>
+    </footer>
+  </main>
+
+  <script src="qa-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
